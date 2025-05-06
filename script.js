@@ -1,5 +1,6 @@
 let passwordInput = document.querySelector('#password');
 let progressBar = document.querySelector('.progress .bar');
+let eye = document.querySelector('#eye-icon');
 
 passwordInput.addEventListener('keyup', () => {
     let strength = 0;
@@ -50,3 +51,8 @@ function renderRule(ruleClass, valid) {
     
     return valid ? 1 : 0;
 }
+
+eye.addEventListener('click', () => {
+    passwordInput.getAttribute('type') === 'password' ? passwordInput.setAttribute('type', 'text') : passwordInput.setAttribute('type', 'password');
+})
+
