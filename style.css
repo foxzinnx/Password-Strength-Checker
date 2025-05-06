@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper--validator {
+    width: 100%;
+    max-width: 23rem;
+    padding: 0 15px;
+}
+
+.input--div{
+    width: 100%;
+    height: 2.5rem;
+}
+
+.input--div input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding: 0 10px;
+    border: 1px solid #bbbbbb;
+}
+
+.progress{
+    margin-top: 0.5rem;
+    width: 100%;
+    height: 0.5rem;
+    background-color: #dddddd;
+}
+
+.bar{
+    width: 0%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: red;
+    transition: all .4s ease-in-out;
+}
+
+.validator-point{
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 100%;
+    background-color: #dddddd;
+}
+
+.validator-area{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 0.5rem;
+}
+
+.validator-item{
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.validator-item span{
+    font-size: 14px;
+}
+
+@media (max-width: 780px){
+    .container {
+        padding: 0 20px;
+    }
+    
+    .wrapper--validator {
+        padding: 0;
+    }
+    
+    .valid-text {
+        font-size: 13px;
+    }
+}
